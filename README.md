@@ -2,7 +2,9 @@
 
 *Ou comment communiquer en MIDI en utilisant une carte Arduino comme controleur MIDI.*
 
-- Le cours d'[introduction à Arduino](https://www.valentindupas.com/courses/arduino/1-_Arduino_from_the_ground_up) de Valentin 
+English version [here](https://github.com/LucieMrc/Arduino_MIDI_USB_EN)
+
+- Le cours d'[introduction à Arduino](https://www.valentindupas.com/courses/arduino/1-_Arduino_from_the_ground_up) (EN) de Valentin 
 - L'[introduction à Arduino et aux capteurs](https://github.com/b2renger/Introduction_Arduino) de B2renger
 
 ## Le MIDI
@@ -23,8 +25,8 @@ Dans le setup(), on utilise `MIDI.begin(4);` pour démarrer la communication mid
 
 ### Envoyer et arrêter une note
 
-On peut ensuite utiliser la fonction `MIDI.sendNoteOn(a, b, c);` pour envoyer une note, où l'argument a est la note (de 0 à 127), l'argument b est la vélocité ( = la vitesse d'enfoncement de la touche du clavier, de 0 à 127), et l'argument c est le channel.
-On procède de la même manière pour arrêter une note avec la fonction `MIDI.sendNote(a, b, c);`.
+On peut ensuite utiliser la fonction `MIDI.sendNoteOn(a, b, c);` pour envoyer une note, où l'argument **a** est la note (de 0 à 127), l'argument **b** est la vélocité ( = la vitesse d'enfoncement de la touche du clavier, de 0 à 127), et l'argument **c** est le channel (de 0 à 16).
+On procède de la même manière pour arrêter une note avec la fonction `MIDI.sendNoteOff(a, b, c);`.
 
 Ainsi dans le code d'exemple de la librairie "Basic_IO", 
 ```
@@ -35,11 +37,11 @@ Ainsi dans le code d'exemple de la librairie "Basic_IO",
 ```
 On envoie la note 42, avec une vélocité de 127, sur le channel 1, puis on l'arrête 1 seconde après.
 
-*[Ressource](https://www.phys.unsw.edu.au/jw/notes.html) sur les notes, leur valeur midi et les équivalents en notation américaine et en fréquence sur le site de l'USNW.*
+*[Ressource](https://www.phys.unsw.edu.au/jw/notes.html) sur les notes, leur valeur midi et les équivalents en notation américaine et en fréquence sur le site de l'UNSW.*
 
 ### Envoyer un Control Change
 
-On utilise la fonction `MIDI.sendControlChange(a, b, c);` où l'argument a est le numéro du contrôle (de 0 à 127), l'argument b est la valeur (de 0 à 127) et l'argument c est le channel.
+On utilise la fonction `MIDI.sendControlChange(a, b, c);` où l'argument **a** est le numéro du contrôle (de 0 à 127), l'argument **b** est la valeur (de 0 à 127) et l'argument **c** est le channel (de 0 à 16). 
 
 <!-- ### Boutons et potentiomètres
 
