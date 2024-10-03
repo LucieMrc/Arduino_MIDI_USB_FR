@@ -7,6 +7,8 @@ English version [here](https://github.com/LucieMrc/Arduino_MIDI_USB_EN)
 - Le cours d'[introduction à Arduino](https://www.valentindupas.com/courses/arduino/1-_Arduino_from_the_ground_up) (EN) de Valentin 
 - L'[introduction à Arduino et aux capteurs](https://github.com/b2renger/Introduction_Arduino) de B2renger
 
+https://github.com/user-attachments/assets/c2010b42-fa77-4d7c-9026-c64da561116d
+
 ## Le MIDI
 
 Le MIDI (Musical Instrument Digital Interface) est un protocole de communication pour la musique, utilisé le plus souvent pour la communication entre instruments électroniques, contrôleurs, et logiciels de musique.
