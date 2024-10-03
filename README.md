@@ -91,7 +91,7 @@ En créant un `Midi In` CHOP dans le network, on récupère les messages MIDI ar
 
 Pour faire apparaître des formes dans TouchDesigner en touchant des objets conducteurs comme dans la vidéo en haut de page, on utilise un MPR121.
 
-Un MPR121 est un capteur capactif qui détecte si on touche ou on arrête de toucher une des ses douzes broches, ou n'importe quel objet conducteur relié aux broches. Ici, j'utilise de la laine conductrice que j'ai feutré en formes géométriques, reliées aux broches avec des câbles plantés dans les formes.
+Un MPR121 est un capteur capactif qui détecte si on touche une des ses douzes broches, ou n'importe quel objet conducteur relié aux broches. Ici, j'utilise de la laine conductrice que j'ai feutré en formes géométriques, reliées aux broches avec des câbles plantés dans les formes.
 
 *[Lien](https://learn.adafruit.com/adafruit-mpr121-12-key-capacitive-touch-sensor-breakout-tutorial) de la ressource Adafruit du MPR121 avec le schéma de branchement.*
 
@@ -162,7 +162,7 @@ En faisant un `Select` CHOP pour chaque note, on peux isoler la donnée afin d'a
 
 On rajoute ensuite un `Filter` CHOP afin d'avoir une transition entre le 0 et le 1 et adoucir l'animation. 
 
-Enfin, on crée un `Rectangle` TOP et on lui donne comme Size la valeur en sortie du filtre, divisée par 2.
+Enfin, on crée un `Rectangle` TOP et on lui donne comme Size la valeur en sortie du Filter, divisée par 2.
 
 ![Screenshot de l'interface de TD](./images/screen7.png)
 
