@@ -5,9 +5,11 @@
 - Le cours d'[introduction à Arduino](https://www.valentindupas.com/courses/arduino/1-_Arduino_from_the_ground_up) de Valentin 
 - L'[introduction à Arduino et aux capteurs](https://github.com/b2renger/Introduction_Arduino) de B2renger
 
-## Le MIDI ???
+## Le MIDI
 
-de 0 à 127
+Le MIDI (Musical Instrument Digital Interface) est un protocole de communication pour la musique, utilisé le plus souvent pour la communication entre instruments électroniques, contrôleurs, et logiciels de musique.
+
+Les données midi sont communiquées sur 16 channels, et ont une range de 0 à 127. Il y a donc 128 notes par channels, et 128 control changes.
 
 ## Envoyer le MIDI avec Arduino
 
@@ -21,7 +23,7 @@ Dans le setup(), on utilise `MIDI.begin(4);` pour démarrer la communication mid
 
 ### Envoyer et arrêter une note
 
-On peut ensuite utiliser la fonction `MIDI.sendNoteOn(a, b, c);` pour envoyer une note, où l'argument a est la note (de 0 à 127), l'argument b est la vélocité (de 0 à 127), et l'argument c est le channel.
+On peut ensuite utiliser la fonction `MIDI.sendNoteOn(a, b, c);` pour envoyer une note, où l'argument a est la note (de 0 à 127), l'argument b est la vélocité ( = la vitesse d'enfoncement de la touche du clavier, de 0 à 127), et l'argument c est le channel.
 On procède de la même manière pour arrêter une note avec la fonction `MIDI.sendNote(a, b, c);`.
 
 Ainsi dans le code d'exemple de la librairie "Basic_IO", 
